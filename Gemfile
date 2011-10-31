@@ -9,6 +9,8 @@ gem 'rails', '3.1.0'
 
 gem 'mysql2', '~> 0.3.6'
 
+gem 'rake', '0.8.7'
+
 # Gems used only for assets and not required
 # in production environments by default.
 # group :assets do
@@ -29,11 +31,12 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development do
-  gem 'rspec-rails', '2.0.1'
+  gem 'rspec-rails', '2.6.1'
 end
 
 group :test do
-  gem 'rspec', '2.0.1'
+  gem 'rspec'
   gem 'webrat', '0.7.1'
-  
+  gem 'spork'
+  gem 'guard-spork'
 end
